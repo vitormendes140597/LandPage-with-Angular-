@@ -1,0 +1,129 @@
+@font-face
+{
+	font-family: "Roboto";
+	src: url('../font/Roboto.ttf');
+
+	font-family: "RockWell";
+	src: url('../font/Rockwell-Extra-Bold.ttf');
+}
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+#logo
+{
+	border-radius: 8px;
+}
+
+.main
+{
+	padding: 10% 0% 0% 5%;
+}
+
+.italic-p 
+{
+    margin-top: 14%;
+    font-size: 30px;
+    color: #000;
+    
+}
+
+h1
+{
+	color:#000;
+}
+
+.texts_h1
+{
+	padding: 16%;
+    padding-top: 4%;
+    padding-left: 2%;
+    padding-bottom: 0%;
+}
+
+.texts_p
+{
+	padding-right: 24%;
+    padding-top: 4%;
+}
+
+.stores
+{
+	width: 25%;
+}
+
+#phones {
+    background-image: url(../img/devices.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    padding-top: 53%;
+    margin-top: 5%;
+}
+
+#svip_logo
+{
+	margin: auto;
+	display: block;
+
+}
+
+#apple_store
+{
+	float:right;width:22%;
+	margin-right: 49%;
+}
+
+#play_store
+{
+	float:left;
+	width:25%;
+}
+
+.buttons_content{
+	margin-top: 5%;
+}
+
+.resize{
+	width: 21%;
+}
+
+@media only screen and (max-width: 990px) 
+{
+	#logo
+	{
+		display: block;
+    	margin: auto;
+	}
+
+	.italic-p
+	{
+		text-align: center;
+	}
+
+	h1
+	{
+		text-align: center;
+	}
+
+	.texts_p
+	{
+		text-align: justify;
+	}
+
+	#phones{
+		margin-top: 20%;
+		padding-top: 100%;
+	}
+
+	.buttons_content{
+		margin-left: 12%;
+   		 margin-top: 10%;
+	}
+
+	.resize{
+		width: 35%;
+	}
+}

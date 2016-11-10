@@ -1,0 +1,85 @@
+<style>
+	body{
+		background-color: {{salon.bgcolor}};
+	}
+	hr{
+		  border: 1px solid;
+		  border-color: {{salon.hr}};
+	}
+
+	.btn-custom	{
+		background: {{salon.btn_bg}};
+	    border: none;
+	    color: {{salon.btn_color}};
+		}
+
+	h1{
+		font-family: {{salon.h1_font}};
+	}
+
+	#logo{
+		border-radius: 20px;
+		border: 2px solid #fff;
+	}
+</style>
+
+<div class="container" >
+			<div class="row">
+				<div class="col-md-6 main">
+				<!-- Logo e Texto -->
+					<div class="row">
+						<div class="col-md-4">
+							<img id="logo" src={{salon.icon}} alt="Logo">
+						</div>
+						<div class="col-md-8" style="margin-left: -5%;">
+							<p class="italic-p">{{salon.appName}}</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 texts_h1">
+							<h1 style="font-family: RockWell;">{{salon.h1}}</h1>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 texts_p">
+							<p style="font-family: 'Roboto',sans-serif">{{salon.mini_text}}</p>
+						</div>
+					</div>
+					<!-- Fim Logo e Texto -->
+
+					<!-- <div style="margin-top: 5%;">
+						<div>
+							<a href={{salon.google_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
+						</div>
+						<div>
+						
+							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
+
+						</div>
+					</div> -->
+					<div class="row buttons_content">
+						<div class="col-md-6 col-xs-6 resize">
+							<a href={{salon.google_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom">Apple Store</button></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6" id="phones"></div>
+
+			</div>
+			
+		</div>
+
+		<div class="container-fluid">
+			<hr></hr>
+			<div class="row">
+				<div class="col-md-12">
+					<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
+				</div>
+			</div>
+		</div>
