@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
 	<meta charset="UTF-8">
 	<title>SalãoVIP</title>
 	
@@ -8,43 +6,90 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/public/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/public/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="routes.js"></script>
+	<script type="text/javascript" src="Controller/Controller.js"></script>
+	<script type="text/javascript" src="services/SalonServices.js"></script>
+	<script type="text/javascript" src="assets/public/bootstrap/js/bootstrap.js"></script>
 </head>
-<body ng-app="SalaoApp" style="background-color: {{bgcolor}}">
-	<div>
-		<div class="container" >
+<body ng-app="SalaoApp" class="ng-scope">
+  <!-- uiView: undefined --><ui-view class="ng-scope"><style class="ng-binding ng-scope">
+	body{
+		background-color: #F7CA18;
+	}
+	hr{
+		  border: 1px solid;
+		  border-color: #000;
+	}
+
+	.btn-custom	{
+		background: #000;
+	    border: none;
+	    color: #fff;
+		}
+
+	h1{
+		font-family: RockWell;
+	}
+
+	#logo{
+		border-radius: 20px;
+		border: 2px solid #fff;
+	}
+</style>
+
+<div class="container ng-scope">
 			<div class="row">
 				<div class="col-md-6 main">
 				<!-- Logo e Texto -->
 					<div class="row">
 						<div class="col-md-4">
-							<img id="logo" src="assets/public/img/icon.jpg" alt="Logo">
+							<img id="logo" alt="Logo" src="assets/public/img/icon.jpg">
 						</div>
 						<div class="col-md-8" style="margin-left: -5%;">
-							<p class="italic-p">{{teste}}</p>
+							<p class="italic-p ng-binding">Garagem Barbearia</p>
 						</div>
 					</div>
 
 					<div class="row">
-						<div class="col-md-12 texts_h1">
-							<h1>Take your Ionic apps with you!</h1>
-						</div>
+						
 					</div>
 
 					<div class="row">
 						<div class="col-md-12 texts_p">
-							<p style="font-family: 'Roboto',sans-serif">Ionic View makes it easy to share your Ionic/Cordova apps with clients and testers around the world, all without having to go through the App Store.</p>
+							<p style="font-family: 'Roboto',sans-serif" class="ng-binding">Ionic View makes it easy to share your Ionic/Cordova apps with clients and testers around the world, all without having to go through the App Store.</p>
 						</div>
 					</div>
 					<!-- Fim Logo e Texto -->
 
-					<div style="margin-top: 5%;">
+					<!-- <div style="margin-top: 5%;">
 						<div>
-							<a href="#"> <img id="apple_store" src="assets/public/img/appstore.png" class="stores" > </a>
+							<a href={{salon.google_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
 						</div>
 						<div>
-							<a href="#"> <img id="play_store" src="assets/public/img/playstore.png" class="stores" style=""></a>
+						
+							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
+
+						</div>
+					</div> -->
+					<div class="row buttons_content">
+						<div class="col-md-6 col-xs-6 resize">
+							<a href="www.salaovip.com.br"> <button class="btn btn-default btn-custom">Google Play</button></a>
+						</div>
+						<div class="col-md-6 col-xs-6">
+							<a href="www.salaovip.com.br"> <i class="fa fa-apple"><button class="btn btn-default btn-custom">Apple Store</button></i></a>
 						</div>
 					</div>
+
+<dic class="row">
+  <div class="col-md-12">
+					<img id="" class="" src="assets/public/img/tec_svip.png" style="
+    margin: 20px -10px;
+">
+				</div>
+  </dic>
 				</div>
 
 				<div class="col-md-6" id="phones"></div>
@@ -53,20 +98,14 @@
 			
 		</div>
 
-		<div class="container-fluid">
-			<hr style="border: 1px solid #ECECEC;"></hr>
+		<div class="container-fluid ng-scope">
+			<hr>
 			<div class="row">
 				<div class="col-md-12">
 					<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
 				</div>
 			</div>
 		</div>
-		</div>
+</ui-view>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="Controller/Controller.js"></script>
-	<script type="text/javascript" src="assets/public/bootstrap/js/bootstrap.js"></script>
-</body>
-</html>
+</body></html>

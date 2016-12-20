@@ -8,14 +8,11 @@
 	}
 
 	.btn-custom	{
-		background: {{salon.btn_bg}};
-	    border: none;
-	    color: {{salon.btn_color}};
+			background: {{salon.btn_bg}};
+		    border: none;
+		    color: {{salon.btn_color}};
 		}
 
-	h1{
-		font-family: {{salon.h1_font}};
-	}
 
 	#logo{
 		border-radius: 20px;
@@ -32,15 +29,15 @@
 							<img id="logo" src={{salon.icon}} alt="Logo">
 						</div>
 						<div class="col-md-8" style="margin-left: -5%;">
-							<p class="italic-p">{{salon.appName}}</p>
+							<p class="italic-p" style="color:{{salon.appNameColor}}">{{salon.appName}}</p>
 						</div>
 					</div>
-
+<!-- 
 					<div class="row">
 						<div class="col-md-12 texts_h1">
 							<h1 style="font-family: RockWell;">{{salon.h1}}</h1>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="row">
 						<div class="col-md-12 texts_p">
@@ -49,37 +46,35 @@
 					</div>
 					<!-- Fim Logo e Texto -->
 
-					<!-- <div style="margin-top: 5%;">
-						<div>
-							<a href={{salon.google_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
-						</div>
-						<div>
-						
-							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
-
-						</div>
-					</div> -->
-					<div class="row buttons_content">
-						<div class="col-md-6 col-xs-6 resize">
-							<a href={{salon.google_link}}> <button  class="btn btn-default btn-custom">Google Play</button></a>
-						</div>
-						<div class="col-md-6 col-xs-6">
-							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom">Apple Store</button></a>
+				
+					<div class="row text_center" style="margin-top: 5%;">
+						<div class="col-md-12 col-xs-12">
+							<a href="{{salon.google_link}}"> <button  class="btn btn-default btn-custom"> <i class="fa fa-play" aria-hidden="true"></i> Google Play </button></a>
+							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom"> <i class="fa fa-apple" aria-hidden="true"></i> Apple Store </button></a>
 						</div>
 					</div>
+
+					<div class="row" style="margin-top: 5%;">
+							<div class="col-md-12">
+								<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
+							</div>
+					</div>
+				
 				</div>
 
-				<div class="col-md-6" id="phones"></div>
+				<div class="col-md-6" id="phones">
+					<div class="col-md-4">
+						
+					</div>
+
+					<div class="col-md-8">
+						<img id="android_device" src="assets/public/img/android.png">
+					</div>
+
+				</div>
 
 			</div>
 			
 		</div>
 
-		<div class="container-fluid">
-			<hr></hr>
-			<div class="row">
-				<div class="col-md-12">
-					<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
-				</div>
-			</div>
-		</div>
+	
