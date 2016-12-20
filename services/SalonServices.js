@@ -6,7 +6,7 @@ app.service("SalonService",function($http){
 
 		return $http({
 			method: "GET",
-			url: "http://localhost/landpage/controller.php",
+			url: "http://192.168.0.36/landpage/controller.php",
 			params:{nome:nome},
 			headers:{'Content-Type': 'application/x-www-form-urlencoded'}
 		});

@@ -1,4 +1,4 @@
-@font-face
+/*@font-face
 {
 	font-family: "Roboto";
 	src: url('../font/Roboto.ttf');
@@ -10,12 +10,14 @@
 body
 {
 	font-family: 'Roboto', sans-serif;
-}
+}*/
 
 
 #logo
 {
 	border-radius: 8px;
+	display: block;
+    margin: auto;
 }
 
 .main
@@ -25,10 +27,9 @@ body
 
 .italic-p 
 {
-    margin-top: 14%;
+    margin-top: 7%;
     font-size: 30px;
-    color: #000;
-    
+    color: #000;   
 }
 
 h1
@@ -46,7 +47,6 @@ h1
 
 .texts_p
 {
-	padding-right: 24%;
     padding-top: 4%;
 }
 
@@ -84,31 +84,15 @@ h1
 }
 
 
-@media only screen and (max-width: 990px) 
-{
-	#logo
-	{
-		display: block;
-    	margin: auto;
-	}
 
-	.italic-p
-	{
-		text-align: center;
-	}
+@media only screen and (min-width: 767px) and (max-width: 991px){
 
-	h1
+	.main
 	{
-		text-align: center;
+		padding: 10% 0% 0% 0%;
 	}
-
-	.texts_p
-	{
-		text-align: justify;
-	}
-
 	#phones{
-		margin-top: 20%;
+		margin-top: 30px;
 		padding-top: 100%;
 	}
 
@@ -116,8 +100,49 @@ h1
 		display: block;
 		margin: 0 auto;
 	}
+}
 
-	.text_center{
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+
+	.main{
+		padding: 10% 0% 0% 0%;
+	}
+
+	.italic-p,h1,.resposive-center
+	{
 		text-align: center;
+	}
+
+	#phones{
+		margin-top: 30px;
+		padding-top: 0%;
+		height: 400px;
+	}
+
+	#svip_logo{
+		display: block;
+		margin: 0 auto;
+	}
+} 
+
+
+
+/*FOTO APP*/
+
+@media only screen and (min-width: 250px) and (max-width: 568px) {
+
+	#android_device {
+	    width: 56.6%;
+	    margin-left: 35.3%;
+	    margin-top: -146.2%;
+	}
+}
+
+@media only screen and (max-height: 667px) {
+
+	#android_device {
+	    width: 54.6%;
+	    margin-left: 35.3%;
+	    margin-top: -137.2%;
 	}
 }

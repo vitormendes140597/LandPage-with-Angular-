@@ -16,64 +16,48 @@
 
 	#logo{
 		border-radius: 20px;
-		border: 2px solid #fff;
+		border: {{salon.icon_border}};
+	}
+
+	.texts_p{
+		color:{{salon.mini_text_color}};
 	}
 </style>
 
 <div class="container" >
-			<div class="row">
 				<div class="col-md-6 main">
 				<!-- Logo e Texto -->
-					<div class="row">
-						<div class="col-md-4">
+					<div class="">
+						<div class="col-md-12">
 							<img id="logo" src={{salon.icon}} alt="Logo">
 						</div>
-						<div class="col-md-8" style="margin-left: -5%;">
-							<p class="italic-p" style="color:{{salon.appNameColor}}">{{salon.appName}}</p>
+						<div class="col-md-12">
+							<p class="italic-p text-center" style="color:{{salon.appNameColor}}">{{salon.appName}}</p>
 						</div>
 					</div>
-<!-- 
-					<div class="row">
-						<div class="col-md-12 texts_h1">
-							<h1 style="font-family: RockWell;">{{salon.h1}}</h1>
-						</div>
-					</div> -->
 
-					<div class="row">
-						<div class="col-md-12 texts_p">
+					<div class="">
+						<div class="col-md-12 texts_p text-center">
 							<p style="font-family: 'Roboto',sans-serif">{{salon.mini_text}}</p>
 						</div>
 					</div>
 					<!-- Fim Logo e Texto -->
 
 				
-					<div class="row text_center" style="margin-top: 5%;">
+					<div class="row text-center" style="margin-top: 5%;">
 						<div class="col-md-12 col-xs-12">
 							<a href="{{salon.google_link}}"> <button  class="btn btn-default btn-custom"> <i class="fa fa-play" aria-hidden="true"></i> Google Play </button></a>
 							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom"> <i class="fa fa-apple" aria-hidden="true"></i> Apple Store </button></a>
 						</div>
 					</div>
-
-					<div class="row" style="margin-top: 5%;">
-							<div class="col-md-12">
+							<div class="col-md-12 text-center" style="margin-top: 5%;">
 								<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
-							</div>
-					</div>
-				
+							</div>				
 				</div>
 
 				<div class="col-md-6" id="phones">
-					<div class="col-md-4">
-						
-					</div>
-
-					<div class="col-md-8">
-						<img id="android_device" src="assets/public/img/android.png">
-					</div>
-
+					<!-- <img id="android_device" src="assets/public/img/android.png"> -->
 				</div>
-
-			</div>
 			
 		</div>
 
