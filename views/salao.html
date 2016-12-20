@@ -1,6 +1,7 @@
 <style>
 	body{
 		background-color: {{salon.bgcolor}};
+		font-family:{{salon.appFont}};
 	}
 	hr{
 		  border: 1px solid;
@@ -36,21 +37,21 @@
 						</div>
 					</div>
 
-					<div class="">
+					<div>
 						<div class="col-md-12 texts_p text-center">
-							<p style="font-family: 'Roboto',sans-serif">{{salon.mini_text}}</p>
+							<p>{{salon.mini_text}}</p>
 						</div>
 					</div>
 					<!-- Fim Logo e Texto -->
 
 				
-					<div class="row text-center" style="margin-top: 5%;">
-						<div class="col-md-12 col-xs-12">
+					<div class="text-center">
+						<div class="col-md-12 col-xs-12" style="margin-top: 15px;">
 							<a href="{{salon.google_link}}"> <button  class="btn btn-default btn-custom"> <i class="fa fa-play" aria-hidden="true"></i> Google Play </button></a>
 							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom"> <i class="fa fa-apple" aria-hidden="true"></i> Apple Store </button></a>
 						</div>
 					</div>
-							<div class="col-md-12 text-center" style="margin-top: 5%;">
+							<div class="col-md-12 text-center" id="logo-div">
 								<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
 							</div>				
 				</div>
