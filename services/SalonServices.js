@@ -1,6 +1,8 @@
 app.service("SalonService",function($http){
 
-	this.get = function(nome){
+	var _self = this;
+	
+	_self.getContentBody = function(nome){
 
 		return $http({
 			method: "GET",

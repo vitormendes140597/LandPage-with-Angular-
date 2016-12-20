@@ -4,17 +4,19 @@ app.controller('SalaoController', function SalaoController(SalonService,$scope, 
 	
 
 	$scope.teste= "SalaoController";
-	
+
 	var option = $stateParams.nome;
 	console.log(option);
 
 	if(option != null)
 	{
-		SalonService.get(option).then(function sucess(response){
+		SalonService.getContentBody(option).then(function success(response){
 			console.log(response);
 
 			if(response.status == 200){
+				
 				$scope.salon = response.data;
+				
 			}
 
 		});;

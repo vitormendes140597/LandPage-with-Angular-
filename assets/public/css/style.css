@@ -58,17 +58,11 @@ h1
 #phones {
     background-image: url(../img/devices.png);
     background-repeat: no-repeat;
+    height: 586px;
     background-size: 90%;
-    padding-top: 53%;
     margin-top: 5%;
 }
 
-#svip_logo
-{
-	margin: auto;
-	display: block;
-
-}
 
 #apple_store
 {
@@ -82,13 +76,13 @@ h1
 	width:25%;
 }
 
-.buttons_content{
-	margin-top: 5%;
+#android_device{
+     width: 76.6%;
+    margin-left: 3.3%;
+    margin-top: 19.5%;
+
 }
 
-.resize{
-	width: 21%;
-}
 
 @media only screen and (max-width: 990px) 
 {
@@ -118,12 +112,12 @@ h1
 		padding-top: 100%;
 	}
 
-	.buttons_content{
-		margin-left: 12%;
-   		 margin-top: 10%;
+	#svip_logo{
+		display: block;
+		margin: 0 auto;
 	}
 
-	.resize{
-		width: 35%;
+	.text_center{
+		text-align: center;
 	}
 }

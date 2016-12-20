@@ -10,7 +10,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   var aboutState = {
     name: 'salao',
-    url: '/salao/:nome',
+    url: '/:nome',
     templateUrl: 'views/salao.html',
     controller: "SalaoController"
   }

@@ -45,7 +45,7 @@
         (
             "aplicativo" => "SalãoVIP",
             "bgcolor" => "#fff",
-            "icon" => "icon.jpg",
+            "icon" => "assets/public/img/icon.jpg",
             "h1" => "Take your Ionic apps with you!",
             "mini_text" => "Ionic View makes it easy to share your Ionic/Cordova apps with clients and testers around the world, all without having to go through the App Store.",
             "google_link" => "#",
