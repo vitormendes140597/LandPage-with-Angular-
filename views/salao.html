@@ -1,19 +1,18 @@
 <style>
 	body{
 		background-color: {{salon.bgcolor}};
-		font-family:{{salon.appFont}};
+		font-family:{{salon.appFont}} !important;
 	}
 	hr{
 		  border: 1px solid;
 		  border-color: {{salon.hr}};
 	}
 
-	.btn-custom	{
-			background: {{salon.btn_bg}};
+	.btn-custom , .btn-custom:hover{
+			background: {{salon.btn_bg}}  !important;
 		    border: none;
 		    color: {{salon.btn_color}};
 		}
-
 
 	#logo{
 		border-radius: 20px;
@@ -23,43 +22,52 @@
 	.texts_p{
 		color:{{salon.mini_text_color}};
 	}
+	#phones {
+	    background-repeat: no-repeat;
+	    height: 586px;
+	    background-size: 90%;
+	    margin-top: 5%;
+	}
 </style>
 
 <div class="container" >
-				<div class="col-md-6 main">
-				<!-- Logo e Texto -->
-					<div class="">
-						<div class="col-md-12">
-							<img id="logo" src={{salon.icon}} alt="Logo">
-						</div>
-						<div class="col-md-12">
-							<p class="italic-p text-center" style="color:{{salon.appNameColor}}">{{salon.appName}}</p>
-						</div>
-					</div>
-
-					<div>
-						<div class="col-md-12 texts_p text-center">
-							<p>{{salon.mini_text}}</p>
-						</div>
-					</div>
-					<!-- Fim Logo e Texto -->
-
-				
-					<div class="text-center">
-						<div class="col-md-12 col-xs-12" style="margin-top: 15px;">
-							<a href="{{salon.google_link}}"> <button  class="btn btn-default btn-custom"> <i class="fa fa-play" aria-hidden="true"></i> Google Play </button></a>
-							<a href={{salon.apple_link}}> <button  class="btn btn-default btn-custom"> <i class="fa fa-apple" aria-hidden="true"></i> Apple Store </button></a>
-						</div>
-					</div>
-							<div class="col-md-12 text-center" id="logo-div">
-								<img id="svip_logo" class="img-center" src="assets/public/img/tec_svip.png">
-							</div>				
-				</div>
-
-				<div class="col-md-6" id="phones">
-					<!-- <img id="android_device" src="assets/public/img/android.png"> -->
-				</div>
-			
-		</div>
-
+<div class="col-md-6 main">
+   <!-- Logo e Texto -->
+   <div class="col-md-12">
+      <img id="logo" src={{salon.icon}} alt="Logo" >
+   </div>
+   <br style="clear:both;">
+   <div class="col-md-12">
+      <p class="italic-p text-center" style="color:{{salon.appNameColor}}">
+         Faça seu agendamento online no estabelecimento {{salon.appName}}
+      </p>
+   </div>
+   <div>
+      <div class="col-md-12 texts_p text-center">
+         <p>{{salon.mini_text}}</p>
+      </div>
+   </div>
+   <!-- Fim Logo e Texto -->
+   <div class="text-center">
+      <div class="col-md-12 col-xs-12" style="margin-top: 15px;">
+	        <a ng-show="salon.google_link" ng-href="{{salon.google_link}}">
+		        <button  class="btn btn-default btn-custom"> <i class="fa fa-play" aria-hidden="true"></i> 
+		        	Google Play 
+		        </button>
+	        </a>
+         <a ng-show="salon.apple_link" ng-href="{{salon.apple_link}}"> 
+         	<button  class="btn btn-default btn-custom"> <i class="fa fa-apple" aria-hidden="true"></i> 
+         		Apple Store 
+         	</button>
+         </a>
+      </div>
+   </div>
+   <div class="col-md-12 text-center" id="logo-div">
+      <img id="svip_logo" class="img-center" 
+         src="assets/public/img/svipbranco.png">
+   </div>
+</div>
+<div class="col-md-6" id="phones" ng-style="{'background-image': 'url(' + salon.device + ')'}">
+</div>
+</div>
 	

@@ -5,13 +5,18 @@
 
 	font-family: "RockWell";
 	src: url('../font/Rockwell-Extra-Bold.ttf');
-
-	font-family: "Oswald";
-	src: url('../font/Oswald-Regular.ttf');
 }
 
+@font-face{
+	   font-family: "MyRiad";
+    src: url('../font/MyriadPro-Cond.otf');
+}
 
+@font-face{
 
+    font-family: "Oswald-Regular";
+	src: url('../font/Oswald-Regular.ttf');
+}
 
 #logo
 {
@@ -32,7 +37,7 @@
 .italic-p 
 {
     margin-top: 7%;
-    font-size: 30px;
+    font-size: 22px;
     color: #000;   
 }
 
@@ -52,22 +57,13 @@ h1
 .texts_p
 {
     padding-top: 4%;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .stores
 {
 	width: 25%;
 }
-
-#phones {
-    background-image: url(../img/devices.png);
-    background-repeat: no-repeat;
-    height: 586px;
-    background-size: 90%;
-    margin-top: 5%;
-}
-
 
 #apple_store
 {
@@ -81,14 +77,26 @@ h1
 	width:25%;
 }
 
-#android_device{
-     width: 76.6%;
-    margin-left: 3.3%;
-    margin-top: 19.5%;
-
+#android_device {
+    width: 257px;
+    margin-left: 125%;
+    margin-top: 83.9%;
 }
 
+#ios_device {
+    width: 254px;
+    margin-left: 30%;
+    margin-top: 115.9%;
+}
+.app-pic{
+	width: 100px;
+	z-index: -10;
+}
 
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
 
 @media only screen and (min-width: 767px) and (max-width: 991px){
 
@@ -124,22 +132,36 @@ h1
 	}
 
 	#phones{
-		margin-top: 30px;
+		margin-top: 30px !important;
 		padding-top: 0%;
-		height: 400px;
+		height: 400px !important;
+		background-size: 100% !important;
 	}
 
 	#svip_logo{
 		display: block;
 		margin: 0 auto;
 	}
+
+	#android_device {
+	    width: 133px;
+	    margin-left: 116%;
+	    margin-top: -333%;
+	}
+	
+	#ios_device {
+	    width: 123px;
+	    margin-left: -6%;
+	    margin-top: 69.9%;
+	}
+
 } 
 
 
 
 /*FOTO APP*/
 
-@media only screen and (min-width: 250px) and (max-width: 568px) {
+/*@media only screen and (min-width: 250px) and (max-width: 568px) {
 
 	#android_device {
 	    width: 56.6%;
@@ -155,4 +177,4 @@ h1
 	    margin-left: 35.3%;
 	    margin-top: -137.2%;
 	}
-}
+}*/
