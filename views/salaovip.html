@@ -29,8 +29,8 @@
 	    margin-top: 5%;
 	}
 
-	a:hover{
-		text-decoration: none !important;
+	a{
+		text-decoration: none;
 	}
 </style>
 
@@ -43,7 +43,7 @@
    <br style="clear:both;">
    <div class="col-md-12">
       <p class="italic-p text-center" style="color:{{salon.appNameColor}}">
-        {{salon.description}}
+         Faça seu agendamento online utilizando o aplicativo {{salon.appName}}
       </p>
    </div>
    <div>
@@ -68,7 +68,7 @@
    </div>
    <div class="col-md-12 text-center" id="logo-div">
       <img id="svip_logo" class="img-center" 
-         src="{{salon.sviplogo}}">
+         src="assets/public/img/tec_svip.png">
    </div>
 </div>
 <div class="col-md-6" id="phones" ng-style="{'background-image': 'url(' + salon.device + ')'}">

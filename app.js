@@ -2,10 +2,10 @@ var app = angular.module('SalaoApp', ["ui.router"]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
   var helloState = {
-    name: 'main',
+    name: 'salaovip',
     url: '/',
-    templateUrl: 'views/home.html',
-    controller:  'HomeController'
+    templateUrl: 'views/salaovip.html',
+    controller:  'SalaoController'
   }
 
   var aboutState = {
@@ -17,5 +17,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state(helloState);
   $stateProvider.state(aboutState);
-   $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 });
